@@ -1,0 +1,8 @@
+buildVariable: false
+familyName: Noto Sans Grantha
+googleFonts: true
+includeSubsets:
+- from: Noto Sans
+  name: GF_Latin_Core
+sources:
+- NotoSansGrantha.glyphs
