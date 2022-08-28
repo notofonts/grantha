@@ -1,6 +1,12 @@
 {
     "tests": [
         {
+            "expectation": "four_tamil=0+941|onecomb_gran=0@-224,310+0|five_tamil=2+1051|onecomb_gran=2@-255,310+0",
+            "input": "௪𑍧௫𑍧",
+            "note": "Issue #6",
+            "only": "NotoSansGrantha-Regular.ttf"
+        },
+        {
             "expectation": "ga_virama_gran=0+951",
             "input": "𑌗𑍍",
             "note": "fontdiff-gran-diffenator.html",

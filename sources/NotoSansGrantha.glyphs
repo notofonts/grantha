@@ -2208,7 +2208,7 @@ code = "lookup Extension338 {\012    lookupflag 0;\012    ;\012    # Original so
 name = Extension338;
 },
 {
-code = "languagesystem gran dflt;\012";
+code = "languagesystem gran dflt;\012languagesystem tml2 dflt;\012";
 name = Languagesystems;
 }
 );
