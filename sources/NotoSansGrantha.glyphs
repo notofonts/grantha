@@ -1013,7 +1013,7 @@ code = "d_dha_gran d_dhii_gran ddi_gran gi_gran gi_gran.flat ji_gran ka_gran la_
 name = class11303;
 }
 );
-copyright = "Copyright 2020-2021 Google Inc. All Rights Reserved.";
+copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/grantha)";
 customParameters = (
 {
 name = glyphOrder;
@@ -1534,11 +1534,11 @@ value = "Designed by Monotype design team.";
 },
 {
 name = license;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 },
 {
 name = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 name = vendorID;
@@ -1550,7 +1550,11 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 name = versionString;
-value = "Version 2.002";
+value = "Version 2.003";
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2021-12-16 18:47:01 +0000";
@@ -62322,5 +62326,5 @@ userData = {
 LWPluginVersion = "1429";
 };
 versionMajor = 2;
-versionMinor = 2;
+versionMinor = 3;
 }
