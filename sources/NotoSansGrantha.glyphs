@@ -1,8 +1,5 @@
 {
-.appVersion = "1357";
-DisplayStrings = (
-"/llVocalic_gran"
-);
+.appVersion = "3109";
 classes = (
 {
 code = "ba_gran bha_gran bhi_gran bi_gran ca_gran cha_gran chi_gran ci_gran d_dha_gran d_dhi_gran d_dhii_gran d_va_gran d_vi_gran da_gran dda_gran ddha_gran ddhi_gran ddi_gran ddii_gran dha_gran dhi_gran dhii_gran di_gran ga_gran gha_gran ghi_gran ghii_gran gi_gran h_ma_gran h_mi_gran ha_gran hi_gran j_ja_gran j_ji_gran j_nya_gran j_nyi_gran ja_gran jha_gran jhi_gran ji_gran k_ssa_gran k_ssi_gran k_t_va_gran k_t_vi_gran k_t_vii_gran k_ta_gran k_ti_gran ka_gran kha_gran kha_gran.alt khi_gran ki_gran la_gran li_gran lii_gran lla_gran lli_gran llii_gran m_ma_gran m_mi_gran ma_gran mi_gran n_da_gran n_dha_gran n_dhi_gran n_dhii_gran n_di_gran n_ma_gran n_mi_gran n_na_gran n_ni_gran n_t_vi_gran n_t_vii_gran n_ta_gran n_tha_gran n_thi_gran n_thii_gran n_ti_gran n_va_gran n_vi_gran n_vii_gran na_gran nga_gran ngi_gran ni_gran nna_gran nni_gran ny_ca_gran ny_cha_gran ny_chi_gran ny_ci_gran ny_ja_gran ny_ji_gran nya_gran nyi_gran pa_gran pha_gran phi_gran pi_gran ra_gran ri_gran sa_gran sh_ca_gran sh_ci_gran sh_ra_gran sh_ri_gran sh_va_gran sh_vi_gran sha_gran shi_gran si_gran sii_gran ss_tta_gran ss_tti_gran ssa_gran ssi_gran t_ra_gran t_ri_gran t_tha_gran t_va_gran t_vi_gran t_vii_gran ta_gran tha_gran thi_gran ti_gran tta_gran ttha_gran ttha_gran.alt tthi_gran tthi_gran.alt tti_gran ttii_gran va_gran vi_gran ya_gran yi_gran";
@@ -1529,6 +1526,10 @@ name = "Propagate Anchors";
 value = 0;
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -1551,10 +1552,6 @@ value = "Noto is a trademark of Google Inc.";
 {
 name = versionString;
 value = "Version 2.003";
-},
-{
-name = "Use Typo Metrics";
-value = 1;
 }
 );
 date = "2021-12-16 18:47:01 +0000";
@@ -1800,10 +1797,6 @@ code = "lookup SingleSubstitution59 {\012    lookupflag 0;\012    ;\012    # Ori
 name = SingleSubstitution59;
 },
 {
-code = "lookup LigatureSubstitution60 {\012    lookupflag 0;\012    ;\012    # Original source: 59 \012    sub ja_gran j_nya_gran.below by j_j_nya_gran;\012    sub sha_gran va_gran.below by sh_va_gran;\012} LigatureSubstitution60;\012";
-name = LigatureSubstitution60;
-},
-{
 code = "lookup ChainedContextualGSUB61 {\012    lookupflag UseMarkFilteringSet @markFilteringSet3;\012    ;\012    # Original source: 60 \012    sub [bha_gran.below n_na_gran.below n_ta_gran.below]' lookup SingleSubstitution59 @class282;\012    sub ha_gran.below' lookup SingleSubstitution59 @class283;\012    sub ta_gran.below' lookup SingleSubstitution59 @class284;\012    sub na_gran.below' lookup SingleSubstitution59 @class284;\012    sub na_gran.below' lookup SingleSubstitution59 ta_gran.below;\012    sub [ga_gran.below ga_gran.flat.below]' lookup SingleSubstitution59 @class286;\012    sub [n_na_gran n_ta_gran]' lookup SingleSubstitution59 @class287;\012    sub [ssa_gran ssi_gran ssa_virama_gran]' lookup SingleSubstitution59 @class288;\012    sub [k_ssa_gran k_ssi_gran]' lookup SingleSubstitution59 @class289;\012    sub k_ssa_gran.below' lookup SingleSubstitution59 @class290;\012    sub ssa_gran.below' lookup SingleSubstitution59 @class291;\012    sub [ha_gran hi_gran]' lookup SingleSubstitution59 [k_t_va_gran.below n_dha_gran.below n_t_va_gran.below n_tha_gran.below];\012    sub [bha_gran bhi_gran]' lookup SingleSubstitution59 @class292;\012    sub [ga_gran gi_gran]' lookup SingleSubstitution59 @class293;\012    sub [ta_gran na_gran ni_gran ti_gran]' lookup SingleSubstitution59 @class294;\012} ChainedContextualGSUB61;\012";
 name = ChainedContextualGSUB61;
 },
@@ -1824,48 +1817,8 @@ code = "lookup ChainedContextualGSUB65 {\012    lookupflag UseMarkFilteringSet @
 name = ChainedContextualGSUB65;
 },
 {
-code = "lookup SingleSubstitution66 {\012    lookupflag 0;\012    ;\012    # Original source: 65 \012    sub dda_virama_gran by dda_virama_gran.liga;\012    sub sa_virama_gran by sa_virama_gran.liga;\012    sub ba_virama_gran by ba_virama_gran.liga;\012    sub ca_virama_gran by ca_virama_gran.liga;\012    sub da_virama_gran by da_virama_gran.liga;\012    sub ga_virama_gran by ga_virama_gran.liga;\012    sub ha_virama_gran by ha_virama_gran.liga;\012    sub ha_virama_gran.flat by ha_virama_gran.liga;\012    sub ja_virama_gran by ja_virama_gran.liga;\012    sub ka_virama_gran by ka_virama_gran.liga;\012    sub nga_virama_gran by nga_virama_gran.liga;\012    sub nna_virama_gran by nna_virama_gran.liga;\012    sub nya_virama_gran by nya_virama_gran.liga;\012    sub pa_virama_gran by pa_virama_gran.liga;\012    sub ra_virama_gran by ra_virama_gran.liga;\012    sub sha_virama_gran by sha_virama_gran.liga;\012    sub ssa_virama_gran by ssa_virama_gran.liga;\012    sub tta_virama_gran by tta_virama_gran.liga;\012    sub va_virama_gran by va_virama_gran.liga;\012    sub ya_virama_gran by ya_virama_gran.liga;\012} SingleSubstitution66;\012";
-name = SingleSubstitution66;
-},
-{
-code = "lookup SingleSubstitution67 {\012    lookupflag 0;\012    ;\012    # Original source: 66 \012    sub NullMark by space;\012} SingleSubstitution67;\012";
-name = SingleSubstitution67;
-},
-{
-code = "lookup ChainedContextualGSUB68 {\012    lookupflag UseMarkFilteringSet @markFilteringSet7;\012    ;\012    # Original source: 67 \012    sub @class454' lookup SingleSubstitution67 @class455';\012    sub @class454' lookup SingleSubstitution67 @class3';\012    sub @class454' lookup SingleSubstitution66;\012} ChainedContextualGSUB68;\012";
+code = "";
 name = ChainedContextualGSUB68;
-},
-{
-code = "lookup SingleSubstitution69 {\012    lookupflag 0;\012    ;\012    # Original source: 68 \012    sub avagraha_gran by avagraha_gran.alt;\012} SingleSubstitution69;\012";
-name = SingleSubstitution69;
-},
-{
-code = "lookup SingleSubstitution70 {\012    lookupflag 0;\012    ;\012    # Original source: 69 \012    sub ma_virama_gran.liga by ma_virama_gran.liga.alt;\012} SingleSubstitution70;\012";
-name = SingleSubstitution70;
-},
-{
-code = "lookup SingleSubstitution71 {\012    lookupflag 0;\012    ;\012    # Original source: 70 \012    sub ga_gran by ga_gran.flat;\012    sub ta_gran by ta_gran.flat;\012    sub na_gran by na_gran.flat;\012    sub bha_gran by bha_gran.flat;\012    sub ha_gran by ha_gran.flat;\012    sub ga_gran.below by ga_gran.flat.below;\012    sub ta_gran.below by ta_gran.flat.below;\012    sub na_gran.below by na_gran.flat.below;\012    sub bha_gran.below by bha_gran.flat.below;\012    sub ha_gran.below by ha_gran.flat.below;\012    sub k_ta_gran.below by k_ta_gran.flat.below;\012    sub n_na_gran.below by n_na_gran.flat.below;\012    sub n_ta_gran.below by n_ta_gran.flat.below;\012    sub k_ta_gran by k_ta_gran.flat;\012    sub n_na_gran by n_na_gran.flat;\012    sub n_ta_gran by n_ta_gran.flat;\012    sub bhi_gran by bhi_gran.flat;\012    sub gi_gran by gi_gran.flat;\012    sub hi_gran by hi_gran.flat;\012    sub k_ti_gran by k_ti_gran.flat;\012    sub n_ni_gran by n_ni_gran.flat;\012    sub ni_gran by ni_gran.flat;\012    sub n_ti_gran by n_ti_gran.flat;\012    sub ti_gran by ti_gran.flat;\012} SingleSubstitution71;\012";
-name = SingleSubstitution71;
-},
-{
-code = "lookup SingleSubstitution72 {\012    lookupflag 0;\012    ;\012    # Original source: 71 \012    sub kha_gran by kha_gran.alt;\012    sub khi_gran by khi_gran.alt;\012    sub khii_gran by khii_gran.alt;\012} SingleSubstitution72;\012";
-name = SingleSubstitution72;
-},
-{
-code = "lookup SingleSubstitution73 {\012    lookupflag 0;\012    ;\012    # Original source: 72 \012    sub ttha_gran by ttha_gran.alt;\012    sub ttha_gran.below by ttha_gran.below.alt;\012    sub tthi_gran by tthi_gran.alt;\012    sub ttha_virama_gran by ttha_virama_gran.alt;\012} SingleSubstitution73;\012";
-name = SingleSubstitution73;
-},
-{
-code = "lookup SingleSubstitution74 {\012    lookupflag 0;\012    ;\012    # Original source: 73 \012    sub sh_ra_gran by sh_ra_gran.alt1;\012    sub sh_ri_gran by sh_ri_gran.alt1;\012} SingleSubstitution74;\012";
-name = SingleSubstitution74;
-},
-{
-code = "lookup SingleSubstitution75 {\012    lookupflag 0;\012    ;\012    # Original source: 74 \012    sub sh_ra_gran by sh_ra_gran.alt2;\012    sub sh_ri_gran by sh_ri_gran.alt2;\012} SingleSubstitution75;\012";
-name = SingleSubstitution75;
-},
-{
-code = "lookup SingleSubstitution76 {\012    lookupflag 0;\012    ;\012    # Original source: 75 \012    sub repha_yaPhalaa by repha_yaPhalaa.alt;\012} SingleSubstitution76;\012";
-name = SingleSubstitution76;
 },
 {
 code = "lookup MultipleSubstitution77 {\012    lookupflag 0;\012    ;\012    # Original source: 76 \012    sub ma_gran by ma_gran p600;\012    sub mi_gran by mi_gran p600;\012} MultipleSubstitution77;\012";
@@ -2254,44 +2207,54 @@ code = "    lookup ChainedContextualGSUB2;\012";
 name = rphf;
 },
 {
-code = "    lookup SingleSubstitution71;\012";
+code = "\012    sub ga_gran by ga_gran.flat;\012    sub ta_gran by ta_gran.flat;\012    sub na_gran by na_gran.flat;\012    sub bha_gran by bha_gran.flat;\012    sub ha_gran by ha_gran.flat;\012    sub ga_gran.below by ga_gran.flat.below;\012    sub ta_gran.below by ta_gran.flat.below;\012    sub na_gran.below by na_gran.flat.below;\012    sub bha_gran.below by bha_gran.flat.below;\012    sub ha_gran.below by ha_gran.flat.below;\012    sub k_ta_gran.below by k_ta_gran.flat.below;\012    sub n_na_gran.below by n_na_gran.flat.below;\012    sub n_ta_gran.below by n_ta_gran.flat.below;\012    sub k_ta_gran by k_ta_gran.flat;\012    sub n_na_gran by n_na_gran.flat;\012    sub n_ta_gran by n_ta_gran.flat;\012    sub bhi_gran by bhi_gran.flat;\012    sub gi_gran by gi_gran.flat;\012    sub hi_gran by hi_gran.flat;\012    sub k_ti_gran by k_ti_gran.flat;\012    sub n_ni_gran by n_ni_gran.flat;\012    sub ni_gran by ni_gran.flat;\012    sub n_ti_gran by n_ti_gran.flat;\012    sub ti_gran by ti_gran.flat;\012";
 name = ss01;
+notes = "Name: Flat tails";
 },
 {
-code = "    lookup SingleSubstitution72;\012";
+code = "    sub kha_gran by kha_gran.alt;\012    sub khi_gran by khi_gran.alt;\012    sub khii_gran by khii_gran.alt;\012";
 name = ss02;
+notes = "Name: Alternate kha";
 },
 {
-code = "    lookup ChainedContextualGSUB68;\012";
+code = "@virama_forms = [dda_virama_gran sa_virama_gran ba_virama_gran ca_virama_gran da_virama_gran ga_virama_gran ha_virama_gran ha_virama_gran.flat ja_virama_gran ka_virama_gran nga_virama_gran nna_virama_gran nya_virama_gran pa_virama_gran ra_virama_gran sha_virama_gran ssa_virama_gran tta_virama_gran va_virama_gran ya_virama_gran];\012\012lookupflag UseMarkFilteringSet @markFilteringSet7;\012ignore sub @virama_forms' @class455';\012ignore sub @virama_forms' @class3';\012sub @virama_forms' by [dda_virama_gran.liga sa_virama_gran.liga ba_virama_gran.liga ca_virama_gran.liga da_virama_gran.liga ga_virama_gran.liga ha_virama_gran.liga ha_virama_gran.liga ja_virama_gran.liga ka_virama_gran.liga nga_virama_gran.liga nna_virama_gran.liga nya_virama_gran.liga pa_virama_gran.liga ra_virama_gran.liga sha_virama_gran.liga ssa_virama_gran.liga tta_virama_gran.liga va_virama_gran.liga ya_virama_gran.liga];\012";
 name = ss03;
+notes = "Name: Virama ligatures";
 },
 {
-code = "    lookup SingleSubstitution74;\012";
+code = "sub sh_ra_gran by sh_ra_gran.alt1;\012sub sh_ri_gran by sh_ri_gran.alt1;\012";
 name = ss04;
+notes = "Name: Alternate shra/shri";
 },
 {
-code = "    lookup SingleSubstitution75;\012";
+code = "    sub sh_ra_gran by sh_ra_gran.alt2;\012    sub sh_ri_gran by sh_ri_gran.alt2;\012";
 name = ss05;
+notes = "Name: Second alternate shra/shri";
 },
 {
-code = "    lookup SingleSubstitution76;\012";
+code = "    sub repha_yaPhalaa by repha_yaPhalaa.alt;\012";
 name = ss06;
+notes = "Name: Alternate ya phalaa";
 },
 {
-code = "    lookup LigatureSubstitution60;\012";
+code = "    sub ja_gran j_nya_gran.below by j_j_nya_gran;\012    sub sha_gran va_gran.below by sh_va_gran;\012";
 name = ss07;
+notes = "Name: Additional ligatures (jjnya/ shva)";
 },
 {
-code = "    lookup SingleSubstitution70;\012";
+code = "    sub ma_virama_gran.liga by ma_virama_gran.liga.alt;\012";
 name = ss08;
+notes = "Name: Ma+virama ligature";
 },
 {
-code = "    lookup SingleSubstitution69;\012";
+code = "sub avagraha_gran by avagraha_gran.alt;";
 name = ss09;
+notes = "Name: Alternate avagraha";
 },
 {
-code = "    lookup SingleSubstitution73;\012";
+code = "    sub ttha_gran by ttha_gran.alt;\012    sub ttha_gran.below by ttha_gran.below.alt;\012    sub tthi_gran by tthi_gran.alt;\012    sub ttha_virama_gran by ttha_virama_gran.alt;\012";
 name = ss10;
+notes = "Name: Alternate ttha";
 },
 {
 code = "# Automatic Code Start\012    lookup ChainedContextualGPOS35;\012";
