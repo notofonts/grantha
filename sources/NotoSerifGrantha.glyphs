@@ -2438,52 +2438,52 @@ name = rphf;
 {
 code = "    sub ga_gran by ga_gran.flat;\012    sub ta_gran by ta_gran.flat;\012    sub na_gran by na_gran.flat;\012    sub bha_gran by bha_gran.flat;\012    sub ha_gran by ha_gran.flat;\012    sub ga_gran.below by ga_gran.flat.below;\012    sub ta_gran.below by ta_gran.flat.below;\012    sub na_gran.below by na_gran.flat.below;\012    sub bha_gran.below by bha_gran.flat.below;\012    sub ha_gran.below by ha_gran.flat.below;\012    sub k_ta_gran.below by k_ta_gran.flat.below;\012    sub n_na_gran.below by n_na_gran.flat.below;\012    sub n_ta_gran.below by n_ta_gran.flat.below;\012    sub k_ta_gran by k_ta_gran.flat;\012    sub n_na_gran by n_na_gran.flat;\012    sub n_ta_gran by n_ta_gran.flat;\012    sub bhi_gran by bhi_gran.flat;\012    sub gi_gran by gi_gran.flat;\012    sub hi_gran by hi_gran.flat;\012    sub k_ti_gran by k_ti_gran.flat;\012    sub n_ni_gran by n_ni_gran.flat;\012    sub ni_gran by ni_gran.flat;\012    sub n_ti_gran by n_ti_gran.flat;\012    sub ti_gran by ti_gran.flat;\012";
 name = ss01;
-notes = "Name: Flat tailsName: ";
+notes = "Name: Flat tails";
 },
 {
 code = "    sub kha_gran by kha_gran.alt;\012    sub khi_gran by khi_gran.alt;\012    sub khii_gran by khii_gran.alt;\012";
 name = ss02;
-notes = "Name: Alternate khaName: ";
+notes = "Name: Alternate kha";
 },
 {
 code = "    lookupflag UseMarkFilteringSet @markFilteringSet7;\012    ignore sub @class444' @class445';\012    ignore sub @class444' @class3';\012    sub @class444' lookup SingleSubstitution66;\012";
 name = ss03;
-notes = "Name: Virama ligaturesName: ";
+notes = "Name: Virama ligatures";
 },
 {
 code = "    sub sh_ra_gran by sh_ra_gran.alt1;\012    sub sh_ri_gran by sh_ri_gran.alt1;\012";
 name = ss04;
-notes = "Name: Alternate shra/shriName: ";
+notes = "Name: Alternate shra/shri";
 },
 {
 code = "    sub sh_ra_gran by sh_ra_gran.alt2;\012    sub sh_ri_gran by sh_ri_gran.alt2;\012";
 name = ss05;
-notes = "Name: Second alternate shra/shriName: ";
+notes = "Name: Second alternate shra/shri";
 },
 {
 code = "    sub repha_yaPhalaa by repha_yaPhalaa.alt;\012";
 name = ss06;
-notes = "Name: Alternate ya phalaaName: ";
+notes = "Name: Alternate ya phalaa";
 },
 {
 code = "sub ja_gran j_nya_gran.below by j_j_nya_gran;\012sub sha_gran va_gran.below by sh_va_gran;\012";
 name = ss07;
-notes = "Name: Additional ligatures (jjnya/ shva)Name: ";
+notes = "Name: Additional ligatures (jjnya/ shva)";
 },
 {
 code = "sub ma_virama_gran.liga by ma_virama_gran.liga.alt;\012";
 name = ss08;
-notes = "Name: Ma+virama ligatureName: ";
+notes = "Name: Ma+virama ligature";
 },
 {
 code = "sub avagraha_gran by avagraha_gran.alt;\012";
 name = ss09;
-notes = "Name: Alternate avagrahaName: ";
+notes = "Name: Alternate avagraha";
 },
 {
 code = "    sub ttha_gran by ttha_gran.alt;\012    sub ttha_gran.below by ttha_gran.below.alt;\012    sub tthi_gran by tthi_gran.alt;\012    sub ttha_virama_gran by ttha_virama_gran.alt;\012";
 name = ss10;
-notes = "Name: Alternate tthaName: ";
+notes = "Name: Alternate ttha";
 },
 {
 code = "# Automatic Code Start\012# [('gran', 'dflt')]\012    lookup ChainedContextualGPOS35;\012";
@@ -2544,7 +2544,7 @@ value = -534;
 },
 {
 name = winDescent;
-value = 534;
+value = 1757;
 },
 {
 name = winAscent;
@@ -2694,7 +2694,8 @@ unicode = 0020;
 },
 {
 glyphname = nbspace;
-lastChange = "2020-05-24 21:48:52 +0000";
+production = uni00A0;
+lastChange = "2022-09-06 07:57:00 +0000";
 layers = (
 {
 layerId = "229B7033-F00A-4676-AEB9-BF59C6456AE0";
