@@ -2,28 +2,11 @@
 
 Fontbakery version: 0.8.10
 
-<details><summary><b>[11] NotoSerifGrantha-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 1757, but got 534 instead. [code: descent]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+<details><summary><b>[9] NotoSerifGrantha-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
 
 
 * ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
 	* t_ri_gran
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
-
-
-* ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss03 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss04 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss05 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss06 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss07 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss08 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss09 lacks a description string on the 'name' table. [code: missing-description]
-* ⚠ **WARN** The stylistic set ss10 lacks a description string on the 'name' table. [code: missing-description]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -115,7 +98,7 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 1 | 10 | 110 | 7 | 99 | 0 |
+| 0 | 0 | 9 | 110 | 7 | 101 | 0 |
 | 0% | 0% | 4% | 48% | 3% | 44% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
