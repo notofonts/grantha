@@ -1219,7 +1219,7 @@ value = (
 NULL,
 CR,
 space,
-nbspace,
+uni00A0,
 ZWJ,
 ZWNJ,
 dottedCircle,
@@ -2693,7 +2693,7 @@ width = 260;
 unicode = 0020;
 },
 {
-glyphname = nbspace;
+glyphname = uni00A0;
 production = uni00A0;
 lastChange = "2022-09-06 07:57:00 +0000";
 layers = (
