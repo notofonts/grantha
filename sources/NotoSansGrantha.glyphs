@@ -2242,7 +2242,7 @@ notes = "Name: Alternate ya phalaa";
 {
 code = "    sub ja_gran j_nya_gran.below by j_j_nya_gran;\012    sub sha_gran va_gran.below by sh_va_gran;\012";
 name = ss07;
-notes = "Name: Additional ligatures (jjnya/ shva)";
+notes = "Name: Additional ligatures (jjnya/shva)";
 },
 {
 code = "    sub ma_virama_gran.liga by ma_virama_gran.liga.alt;\012";
