@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSerifGrantha-Regular.ttf);
+    font-family: "old font";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSerifGrantha-Regular.ttf);
+    font-family: "new font";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-wght-400{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	    .new-wght-400{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"glyf": {"glyphs": {"error": ["There are 443 changes, check manually!", ""]}}, "GPOS": {"table": {"FeatureList": {"FeatureRecord": {"2": {"Feature": {"LookupCount": [2, 1], "LookupListIndex": {"0": [62, 34], "1": [63, null]}}}, "3": {"Feature": {"LookupCount": [1, 3], "LookupListIndex": {"0": [34, 62], "1": [null, 63], "2": [null, 34]}}}, "4": {"Feature": {"LookupCount": [2, 8], "LookupListIndex": {"0": [62, 48], "1": [63, 55], "2": [null, 56], "3": [null, 54], "4": [null, 57], "5": [null, 60], "6": [null, 59], "7": [null, 97]}}}, "5": {"Feature": {"LookupCount": [8, 4], "LookupListIndex": {"0": [48, 64], "1": [55, 65], "2": [56, 66], "3": [54, 67], "4": [57, null], "5": [60, null], "6": [59, null], "7": [96, null]}}, "FeatureTag": ["kern", "mark"]}, "6": {"Feature": {"LookupCount": [4, 1], "LookupListIndex": {"0": [64, 96], "1": [65, null], "2": [66, null], "3": [67, null]}}, "FeatureTag": ["mark", "mkmk"]}}}, "LookupList": {"LookupCount": [97, 98], "Lookup": {"96": {"LookupType": [2, 6], "LookupFlag": [0, 16], "SubTable": {"0": {"Class1Count": [2, null], "Class1Record": {"0": {"Class2Record": {"0": {"Value1": {"XAdvance": [0, null]}}, "1": {"Value1": {"XAdvance": [-80, null]}}, "2": {"Value1": {"XAdvance": [0, null]}}, "3": {"Value1": {"XAdvance": [0, null]}}, "4": {"Value1": {"XAdvance": [-100, null]}}}}, "1": {"Class2Record": {"0": {"Value1": {"XAdvance": [0, null]}}, "1": {"Value1": {"XAdvance": [0, null]}}, "2": {"Value1": {"XAdvance": [30, null]}}, "3": {"Value1": {"XAdvance": [20, null]}}, "4": {"Value1": {"XAdvance": [0, null]}}}}}, "Mark2Array": {"Mark2Count": [null, 1], "Mark2Record": {"0": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 33], "YCoordinate": [null, 807]}}}}}, "ValueFormat2": [0, null], "Mark2Coverage": {"glyphs": {"0": [null, "asteriskabovecomb"]}}, "Mark1Array": {"MarkCount": [null, 13], "MarkRecord": {"0": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -435], "YCoordinate": [null, 807]}}, "1": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -541], "YCoordinate": [null, 807]}}, "2": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -714], "YCoordinate": [null, 807]}}, "3": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -636], "YCoordinate": [null, 807]}}, "4": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -619], "YCoordinate": [null, 807]}}, "5": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -711], "YCoordinate": [null, 807]}}, "6": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -663], "YCoordinate": [null, 807]}}, "7": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -620], "YCoordinate": [null, 807]}}, "8": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -733], "YCoordinate": [null, 807]}}, "9": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -541], "YCoordinate": [null, 807]}}, "10": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -856], "YCoordinate": [null, 807]}}, "11": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -457], "YCoordinate": [null, 807]}}, "12": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -435], "YCoordinate": [null, 807]}}}}, "ClassDef2": {"classDefs": {"kha_gran": [1, null], "kha_gran.alt": [1, null], "ga_gran": [3, null], "ga_gran.flat": [3, null], "gha_gran": [1, null], "ca_gran": [2, null], "cha_gran": [2, null], "jha_gran": [2, null], "nna_gran": [1, null], "tha_gran": [3, null], "dha_gran": [3, null], "na_gran": [2, null], "na_gran.flat": [2, null], "pa_gran": [1, null], "pha_gran": [1, null], "ba_gran": [1, null], "bha_gran.flat": [1, null], "ya_gran": [2, null], "ra_gran": [2, null], "la_gran": [1, null], "lla_gran": [1, null], "va_gran": [1, null], "ssa_gran": [1, null], "ssa_gran.flat": [1, null], "sa_gran": [1, null], "ma_virama_gran.liga": [4, null], "ba_virama_gran.liga": [1, null], "ha_virama_gran.liga": [1, null], "nna_virama_gran.liga": [1, null], "pa_virama_gran.liga": [1, null], "sa_virama_gran.liga": [1, null], "sa_virama_gran": [1, null], "ssa_virama_gran.liga": [1, null], "va_virama_gran.liga": [1, null], "h_ma_gran": [1, null], "k_ssa_gran.flat": [1, null], "k_ta_gran": [1, null], "k_ta_gran.flat": [1, null], "k_t_va_gran": [1, null], "ny_ja_gran": [1, null], "ss_tta_gran": [1, null], "n_t_va_gran": [1, null], "bi_gran": [1, null], "ghi_gran": [1, null], "ghii_gran": [1, null], "h_mi_gran": [1, null], "khi_gran": [1, null], "li_gran": [1, null], "lii_gran": [1, null], "lli_gran": [1, null], "llii_gran": [1, null], "nni_gran": [1, null], "phi_gran": [1, null], "pi_gran": [1, null], "pii_gran": [1, null], "si_gran": [1, null], "sii_gran": [1, null], "ssi_gran": [1, null], "ssi_gran.flat": [1, null], "ss_tti_gran": [1, null], "bii_gran": [1, null], "khii_gran": [1, null], "vii_gran": [1, null]}}, "ValueFormat1": [4, null], "ClassCount": [null, 1], "ClassDef1": {"classDefs": {"eeMatra_gran": [1, null]}}, "Class2Count": [5, null], "Coverage": {"glyphs": {"0": ["repha_gran", null], "1": ["repha_yaPhalaa", null], "2": ["repha_yaPhalaa.short", null], "3": ["eeMatra_gran", null]}}, "Mark1Coverage": {"glyphs": {"0": [null, "zerocomb_gran"], "1": [null, "onecomb_gran"], "2": [null, "twocomb_gran"], "3": [null, "threecomb_gran"], "4": [null, "fourcomb_gran"], "5": [null, "fivecomb_gran"], "6": [null, "sixcomb_gran"], "7": [null, "acomb_gran"], "8": [null, "kacomb_gran"], "9": [null, "nacomb_gran"], "10": [null, "vicomb_gran"], "11": [null, "pacomb_gran"], "12": [null, "asteriskabovecomb"]}}, "Format": [2, 1]}}, "MarkFilteringSet": [null, 18]}, "97": {"LookupType": [null, 2], "LookupFlag": [null, 0], "SubTableCount": [null, 1], "SubTable": {"0": {"Format": [null, 2], "Coverage": {"glyphs": {"0": [null, "repha_gran"], "1": [null, "repha_yaPhalaa"], "2": [null, "repha_yaPhalaa.short"], "3": [null, "eeMatra_gran"]}}, "ValueFormat1": [null, 4], "ValueFormat2": [null, 0], "ClassDef1": {"classDefs": {"eeMatra_gran": [null, 1]}}, "ClassDef2": {"classDefs": {"kha_gran": [null, 1], "kha_gran.alt": [null, 1], "ga_gran": [null, 3], "ga_gran.flat": [null, 3], "gha_gran": [null, 1], "ca_gran": [null, 2], "cha_gran": [null, 2], "jha_gran": [null, 2], "nna_gran": [null, 1], "tha_gran": [null, 3], "dha_gran": [null, 3], "na_gran": [null, 2], "na_gran.flat": [null, 2], "pa_gran": [null, 1], "pha_gran": [null, 1], "ba_gran": [null, 1], "bha_gran.flat": [null, 1], "ya_gran": [null, 2], "ra_gran": [null, 2], "la_gran": [null, 1], "lla_gran": [null, 1], "va_gran": [null, 1], "ssa_gran": [null, 1], "ssa_gran.flat": [null, 1], "sa_gran": [null, 1], "ma_virama_gran.liga": [null, 4], "ba_virama_gran.liga": [null, 1], "ha_virama_gran.liga": [null, 1], "nna_virama_gran.liga": [null, 1], "pa_virama_gran.liga": [null, 1], "sa_virama_gran.liga": [null, 1], "sa_virama_gran": [null, 1], "ssa_virama_gran.liga": [null, 1], "va_virama_gran.liga": [null, 1], "h_ma_gran": [null, 1], "k_ssa_gran.flat": [null, 1], "k_ta_gran": [null, 1], "k_ta_gran.flat": [null, 1], "k_t_va_gran": [null, 1], "ny_ja_gran": [null, 1], "ss_tta_gran": [null, 1], "n_t_va_gran": [null, 1], "bi_gran": [null, 1], "ghi_gran": [null, 1], "ghii_gran": [null, 1], "h_mi_gran": [null, 1], "khi_gran": [null, 1], "li_gran": [null, 1], "lii_gran": [null, 1], "lli_gran": [null, 1], "llii_gran": [null, 1], "nni_gran": [null, 1], "phi_gran": [null, 1], "pi_gran": [null, 1], "pii_gran": [null, 1], "si_gran": [null, 1], "sii_gran": [null, 1], "ssi_gran": [null, 1], "ssi_gran.flat": [null, 1], "ss_tti_gran": [null, 1], "bii_gran": [null, 1], "khii_gran": [null, 1], "vii_gran": [null, 1]}}, "Class1Count": [null, 2], "Class2Count": [null, 5], "Class1Record": {"0": {"Class2Record": {"0": {"Value1": {"XAdvance": [null, 0]}}, "1": {"Value1": {"XAdvance": [null, -80]}}, "2": {"Value1": {"XAdvance": [null, 0]}}, "3": {"Value1": {"XAdvance": [null, 0]}}, "4": {"Value1": {"XAdvance": [null, -100]}}}}, "1": {"Class2Record": {"0": {"Value1": {"XAdvance": [null, 0]}}, "1": {"Value1": {"XAdvance": [null, 0]}}, "2": {"Value1": {"XAdvance": [null, 30]}}, "3": {"Value1": {"XAdvance": [null, 20]}}, "4": {"Value1": {"XAdvance": [null, 0]}}}}}}}}}}, "ScriptList": {"ScriptRecord": {"0": {"Script": {"DefaultLangSys": {"FeatureCount": [2, 6], "FeatureIndex": {"0": [2, 0], "1": [4, 1], "2": [null, 2], "3": [null, 4], "4": [null, 5], "5": [null, 6]}}}}, "1": {"Script": {"DefaultLangSys": {"FeatureCount": [5, 6], "FeatureIndex": {"3": [5, 4], "4": [6, 5], "5": [null, 6]}}}}}}}}, "GSUB": {"table": {"ScriptList": {"ScriptCount": [1, 2], "ScriptRecord": {"0": {"ScriptTag": ["gran", "DFLT"]}, "1": {"ScriptTag": [null, "gran"], "Script": {"DefaultLangSys": {"ReqFeatureIndex": [null, 65535], "FeatureCount": [null, 20], "FeatureIndex": {"0": [null, 0], "1": [null, 1], "2": [null, 2], "3": [null, 3], "4": [null, 4], "5": [null, 5], "6": [null, 6], "7": [null, 7], "8": [null, 8], "9": [null, 9], "10": [null, 10], "11": [null, 11], "12": [null, 12], "13": [null, 13], "14": [null, 14], "15": [null, 15], "16": [null, 16], "17": [null, 17], "18": [null, 18], "19": [null, 19]}}, "LangSysCount": [null, 0]}}}}}}, "GDEF": {"table": {"MarkGlyphSetsDef": {"MarkSetCount": [18, 19], "Coverage": {"18": {"glyphs": {"0": [null, "asteriskabovecomb"]}}}}}}, "head": {"checkSumAdjustment": [3496345168, 2809578794], "modified": [3745302111, 3770808782]}};</script><div id="difftable"></div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Tamil words</div>
+        <div class="box-text old-wght-400" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-wght-400" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+    
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
