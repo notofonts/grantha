@@ -2390,7 +2390,7 @@ code = "lookup ChainedContextualGPOS348 {\012    lookupflag 0;\012    ;\012    #
 name = ChainedContextualGPOS348;
 },
 {
-code = "languagesystem gran dflt;\012";
+code = "languagesystem DFLT dflt;\012languagesystem gran dflt;\012";
 name = Languagesystems;
 }
 );
