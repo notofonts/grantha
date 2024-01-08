@@ -107,11 +107,11 @@
             .header {
             font-weight: bold;
             }
-            .attrib-old{
+            .attr-before{
                 color: red;
                 cursor: text;
             }
-            .attrib-new{
+            .attr-after{
                 color: green;
                 cursor: text;
             }
@@ -213,6 +213,14 @@
   clear: both;
 }
 
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
     </style>
 </head>
 <body>
@@ -220,6 +228,9 @@
 		
 			<div class="nav-item" id="font-toggle">old</div>
 		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
 		
 	</div>
     <div id="content">
@@ -230,7 +241,7 @@
   
     <div class="box">
     <div class="box-title">Tables</div>
-     <script>var fontdiff = {"glyf": {"glyphs": {"error": ["There are 443 changes, check manually!", ""]}}, "GPOS": {"table": {"FeatureList": {"FeatureRecord": {"2": {"Feature": {"LookupCount": [2, 1], "LookupListIndex": {"0": [62, 34], "1": [63, null]}}}, "3": {"Feature": {"LookupCount": [1, 3], "LookupListIndex": {"0": [34, 62], "1": [null, 63], "2": [null, 34]}}}, "4": {"Feature": {"LookupCount": [2, 8], "LookupListIndex": {"0": [62, 48], "1": [63, 55], "2": [null, 56], "3": [null, 54], "4": [null, 57], "5": [null, 60], "6": [null, 59], "7": [null, 97]}}}, "5": {"Feature": {"LookupCount": [8, 4], "LookupListIndex": {"0": [48, 64], "1": [55, 65], "2": [56, 66], "3": [54, 67], "4": [57, null], "5": [60, null], "6": [59, null], "7": [96, null]}}, "FeatureTag": ["kern", "mark"]}, "6": {"Feature": {"LookupCount": [4, 1], "LookupListIndex": {"0": [64, 96], "1": [65, null], "2": [66, null], "3": [67, null]}}, "FeatureTag": ["mark", "mkmk"]}}}, "LookupList": {"LookupCount": [97, 98], "Lookup": {"96": {"LookupType": [2, 6], "LookupFlag": [0, 16], "SubTable": {"0": {"Class1Count": [2, null], "Class1Record": {"0": {"Class2Record": {"0": {"Value1": {"XAdvance": [0, null]}}, "1": {"Value1": {"XAdvance": [-80, null]}}, "2": {"Value1": {"XAdvance": [0, null]}}, "3": {"Value1": {"XAdvance": [0, null]}}, "4": {"Value1": {"XAdvance": [-100, null]}}}}, "1": {"Class2Record": {"0": {"Value1": {"XAdvance": [0, null]}}, "1": {"Value1": {"XAdvance": [0, null]}}, "2": {"Value1": {"XAdvance": [30, null]}}, "3": {"Value1": {"XAdvance": [20, null]}}, "4": {"Value1": {"XAdvance": [0, null]}}}}}, "Mark2Array": {"Mark2Count": [null, 1], "Mark2Record": {"0": {"Mark2Anchor": {"0": {"Format": [null, 1], "XCoordinate": [null, 33], "YCoordinate": [null, 807]}}}}}, "ValueFormat2": [0, null], "Mark2Coverage": {"glyphs": {"0": [null, "asteriskabovecomb"]}}, "Mark1Array": {"MarkCount": [null, 13], "MarkRecord": {"0": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -435], "YCoordinate": [null, 807]}}, "1": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -541], "YCoordinate": [null, 807]}}, "2": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -714], "YCoordinate": [null, 807]}}, "3": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -636], "YCoordinate": [null, 807]}}, "4": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -619], "YCoordinate": [null, 807]}}, "5": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -711], "YCoordinate": [null, 807]}}, "6": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -663], "YCoordinate": [null, 807]}}, "7": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -620], "YCoordinate": [null, 807]}}, "8": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -733], "YCoordinate": [null, 807]}}, "9": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -541], "YCoordinate": [null, 807]}}, "10": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -856], "YCoordinate": [null, 807]}}, "11": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -457], "YCoordinate": [null, 807]}}, "12": {"Class": [null, 0], "MarkAnchor": {"Format": [null, 1], "XCoordinate": [null, -435], "YCoordinate": [null, 807]}}}}, "ClassDef2": {"classDefs": {"kha_gran": [1, null], "kha_gran.alt": [1, null], "ga_gran": [3, null], "ga_gran.flat": [3, null], "gha_gran": [1, null], "ca_gran": [2, null], "cha_gran": [2, null], "jha_gran": [2, null], "nna_gran": [1, null], "tha_gran": [3, null], "dha_gran": [3, null], "na_gran": [2, null], "na_gran.flat": [2, null], "pa_gran": [1, null], "pha_gran": [1, null], "ba_gran": [1, null], "bha_gran.flat": [1, null], "ya_gran": [2, null], "ra_gran": [2, null], "la_gran": [1, null], "lla_gran": [1, null], "va_gran": [1, null], "ssa_gran": [1, null], "ssa_gran.flat": [1, null], "sa_gran": [1, null], "ma_virama_gran.liga": [4, null], "ba_virama_gran.liga": [1, null], "ha_virama_gran.liga": [1, null], "nna_virama_gran.liga": [1, null], "pa_virama_gran.liga": [1, null], "sa_virama_gran.liga": [1, null], "sa_virama_gran": [1, null], "ssa_virama_gran.liga": [1, null], "va_virama_gran.liga": [1, null], "h_ma_gran": [1, null], "k_ssa_gran.flat": [1, null], "k_ta_gran": [1, null], "k_ta_gran.flat": [1, null], "k_t_va_gran": [1, null], "ny_ja_gran": [1, null], "ss_tta_gran": [1, null], "n_t_va_gran": [1, null], "bi_gran": [1, null], "ghi_gran": [1, null], "ghii_gran": [1, null], "h_mi_gran": [1, null], "khi_gran": [1, null], "li_gran": [1, null], "lii_gran": [1, null], "lli_gran": [1, null], "llii_gran": [1, null], "nni_gran": [1, null], "phi_gran": [1, null], "pi_gran": [1, null], "pii_gran": [1, null], "si_gran": [1, null], "sii_gran": [1, null], "ssi_gran": [1, null], "ssi_gran.flat": [1, null], "ss_tti_gran": [1, null], "bii_gran": [1, null], "khii_gran": [1, null], "vii_gran": [1, null]}}, "ValueFormat1": [4, null], "ClassCount": [null, 1], "ClassDef1": {"classDefs": {"eeMatra_gran": [1, null]}}, "Class2Count": [5, null], "Coverage": {"glyphs": {"0": ["repha_gran", null], "1": ["repha_yaPhalaa", null], "2": ["repha_yaPhalaa.short", null], "3": ["eeMatra_gran", null]}}, "Mark1Coverage": {"glyphs": {"0": [null, "zerocomb_gran"], "1": [null, "onecomb_gran"], "2": [null, "twocomb_gran"], "3": [null, "threecomb_gran"], "4": [null, "fourcomb_gran"], "5": [null, "fivecomb_gran"], "6": [null, "sixcomb_gran"], "7": [null, "acomb_gran"], "8": [null, "kacomb_gran"], "9": [null, "nacomb_gran"], "10": [null, "vicomb_gran"], "11": [null, "pacomb_gran"], "12": [null, "asteriskabovecomb"]}}, "Format": [2, 1]}}, "MarkFilteringSet": [null, 18]}, "97": {"LookupType": [null, 2], "LookupFlag": [null, 0], "SubTableCount": [null, 1], "SubTable": {"0": {"Format": [null, 2], "Coverage": {"glyphs": {"0": [null, "repha_gran"], "1": [null, "repha_yaPhalaa"], "2": [null, "repha_yaPhalaa.short"], "3": [null, "eeMatra_gran"]}}, "ValueFormat1": [null, 4], "ValueFormat2": [null, 0], "ClassDef1": {"classDefs": {"eeMatra_gran": [null, 1]}}, "ClassDef2": {"classDefs": {"kha_gran": [null, 1], "kha_gran.alt": [null, 1], "ga_gran": [null, 3], "ga_gran.flat": [null, 3], "gha_gran": [null, 1], "ca_gran": [null, 2], "cha_gran": [null, 2], "jha_gran": [null, 2], "nna_gran": [null, 1], "tha_gran": [null, 3], "dha_gran": [null, 3], "na_gran": [null, 2], "na_gran.flat": [null, 2], "pa_gran": [null, 1], "pha_gran": [null, 1], "ba_gran": [null, 1], "bha_gran.flat": [null, 1], "ya_gran": [null, 2], "ra_gran": [null, 2], "la_gran": [null, 1], "lla_gran": [null, 1], "va_gran": [null, 1], "ssa_gran": [null, 1], "ssa_gran.flat": [null, 1], "sa_gran": [null, 1], "ma_virama_gran.liga": [null, 4], "ba_virama_gran.liga": [null, 1], "ha_virama_gran.liga": [null, 1], "nna_virama_gran.liga": [null, 1], "pa_virama_gran.liga": [null, 1], "sa_virama_gran.liga": [null, 1], "sa_virama_gran": [null, 1], "ssa_virama_gran.liga": [null, 1], "va_virama_gran.liga": [null, 1], "h_ma_gran": [null, 1], "k_ssa_gran.flat": [null, 1], "k_ta_gran": [null, 1], "k_ta_gran.flat": [null, 1], "k_t_va_gran": [null, 1], "ny_ja_gran": [null, 1], "ss_tta_gran": [null, 1], "n_t_va_gran": [null, 1], "bi_gran": [null, 1], "ghi_gran": [null, 1], "ghii_gran": [null, 1], "h_mi_gran": [null, 1], "khi_gran": [null, 1], "li_gran": [null, 1], "lii_gran": [null, 1], "lli_gran": [null, 1], "llii_gran": [null, 1], "nni_gran": [null, 1], "phi_gran": [null, 1], "pi_gran": [null, 1], "pii_gran": [null, 1], "si_gran": [null, 1], "sii_gran": [null, 1], "ssi_gran": [null, 1], "ssi_gran.flat": [null, 1], "ss_tti_gran": [null, 1], "bii_gran": [null, 1], "khii_gran": [null, 1], "vii_gran": [null, 1]}}, "Class1Count": [null, 2], "Class2Count": [null, 5], "Class1Record": {"0": {"Class2Record": {"0": {"Value1": {"XAdvance": [null, 0]}}, "1": {"Value1": {"XAdvance": [null, -80]}}, "2": {"Value1": {"XAdvance": [null, 0]}}, "3": {"Value1": {"XAdvance": [null, 0]}}, "4": {"Value1": {"XAdvance": [null, -100]}}}}, "1": {"Class2Record": {"0": {"Value1": {"XAdvance": [null, 0]}}, "1": {"Value1": {"XAdvance": [null, 0]}}, "2": {"Value1": {"XAdvance": [null, 30]}}, "3": {"Value1": {"XAdvance": [null, 20]}}, "4": {"Value1": {"XAdvance": [null, 0]}}}}}}}}}}, "ScriptList": {"ScriptRecord": {"0": {"Script": {"DefaultLangSys": {"FeatureCount": [2, 6], "FeatureIndex": {"0": [2, 0], "1": [4, 1], "2": [null, 2], "3": [null, 4], "4": [null, 5], "5": [null, 6]}}}}, "1": {"Script": {"DefaultLangSys": {"FeatureCount": [5, 6], "FeatureIndex": {"3": [5, 4], "4": [6, 5], "5": [null, 6]}}}}}}}}, "GSUB": {"table": {"ScriptList": {"ScriptCount": [1, 2], "ScriptRecord": {"0": {"ScriptTag": ["gran", "DFLT"]}, "1": {"ScriptTag": [null, "gran"], "Script": {"DefaultLangSys": {"ReqFeatureIndex": [null, 65535], "FeatureCount": [null, 20], "FeatureIndex": {"0": [null, 0], "1": [null, 1], "2": [null, 2], "3": [null, 3], "4": [null, 4], "5": [null, 5], "6": [null, 6], "7": [null, 7], "8": [null, 8], "9": [null, 9], "10": [null, 10], "11": [null, 11], "12": [null, 12], "13": [null, 13], "14": [null, 14], "15": [null, 15], "16": [null, 16], "17": [null, 17], "18": [null, 18], "19": [null, 19]}}, "LangSysCount": [null, 0]}}}}}}, "GDEF": {"table": {"MarkGlyphSetsDef": {"MarkSetCount": [18, 19], "Coverage": {"18": {"glyphs": {"0": [null, "asteriskabovecomb"]}}}}}}, "head": {"checkSumAdjustment": [3496345168, 2809578794], "modified": [3745302111, 3770808782]}};</script><div id="difftable"></div>
+      <div data-path="root" data-open="0" id="difftable"></div>
     </div>
     
     
@@ -268,6 +279,7 @@
 
     </div>
   
+<script>var fontdiff = {"OS/2": {"xAvgCharWidth": [1335, 1278]}, "head": {"checkSumAdjustment": [3496345168, 1217758170], "modified": [3745302111, 3787554630]}, "hmtx": {"metrics": {"rVocalicMatra_gran.d2h3": {"0": [0, 647]}, "rrVocalicMatra_gran.d1": {"0": [0, 347]}, "rVocalicMatra_gran.d4": {"0": [0, 347]}, "rVocalicMatra_gran.d5h3": {"0": [0, 647]}, "rVocalicMatra_gran.d3h3": {"0": [0, 647]}, "rVocalicMatra_gran.d1h3": {"0": [0, 647]}, "rrVocalicMatra_gran": {"0": [0, 347]}, "rVocalicMatra_gran.d1": {"0": [0, 347]}, "rVocalicMatra_gran.d2b": {"0": [0, 347]}, "rrVocalicMatra_gran.d1b": {"0": [0, 347]}, "rVocalicMatra_gran.d2bh3": {"0": [0, 647]}, "rVocalicMatra_gran": {"0": [0, 347]}, "rrVocalicMatra_gran.d4": {"0": [0, 347]}, "rVocalicMatra_gran.d1b": {"0": [0, 347]}, "rrVocalicMatra_gran.d2": {"0": [0, 347]}, "rVocalicMatra_gran.d2": {"0": [0, 347]}, "rrVocalicMatra_gran.d3": {"0": [0, 347]}, "rVocalicMatra_gran.d4h3": {"0": [0, 647]}, "rVocalicMatra_gran.d3h2": {"0": [0, 497]}, "rVocalicMatra_gran.d3": {"0": [0, 347]}}}, "GDEF": {"table": {"MarkGlyphSetsDef": {"MarkSetCount": [18, 20], "Coverage": {"6": {"glyphs": {"0": ["lVocalicMatra_gran", "rVocalicMatra_gran"], "1": ["llVocalicMatra_gran", "rVocalicMatra_gran.d1"], "2": ["anudatta_deva", "rVocalicMatra_gran.d1b"], "3": [null, "rVocalicMatra_gran.d2"], "4": [null, "rVocalicMatra_gran.d2b"], "5": [null, "rVocalicMatra_gran.d3"], "6": [null, "rVocalicMatra_gran.d4"], "7": [null, "rVocalicMatra_gran.d4h3"], "8": [null, "rVocalicMatra_gran.d3h3"], "9": [null, "rVocalicMatra_gran.d3h2"], "10": [null, "rVocalicMatra_gran.d2h3"], "11": [null, "rVocalicMatra_gran.d2bh3"], "12": [null, "rVocalicMatra_gran.d1h3"], "13": [null, "rVocalicMatra_gran.d5h3"], "14": [null, "rrVocalicMatra_gran"], "15": [null, "rrVocalicMatra_gran.d1"], "16": [null, "rrVocalicMatra_gran.d1b"], "17": [null, "rrVocalicMatra_gran.d2"], "18": [null, "rrVocalicMatra_gran.d3"], "19": [null, "rrVocalicMatra_gran.d4"]}}, "7": {"glyphs": {"0": ["binducomb_gran", "lVocalicMatra_gran"], "1": ["nukta_gran", "llVocalicMatra_gran"], "2": ["lVocalicMatra_gran", "anudatta_deva"], "3": ["llVocalicMatra_gran", null], "4": ["ka_gran.below", null], "5": ["kha_gran.below", null], "6": ["ga_gran.below", null], "7": ["ga_gran.flat.below", null], "8": ["gha_gran.below", null], "9": ["nga_gran.below", null], "10": ["ca_gran.below", null], "11": ["cha_gran.below", null], "12": ["ja_gran.below", null], "13": ["jha_gran.below", null], "14": ["nya_gran.below", null], "15": ["tta_gran.below", null], "16": ["ttha_gran.below", null], "17": ["ttha_gran.below.alt", null], "18": ["dda_gran.below", null], "19": ["ddha_gran.below", null], "20": ["nna_gran.below", null], "21": ["ta_gran.below", null], "22": ["ta_gran.flat.below", null], "23": ["tha_gran.below", null], "24": ["da_gran.below", null], "25": ["dha_gran.below", null], "26": ["na_gran.below", null], "27": ["na_gran.flat.below", null], "28": ["pa_gran.below", null], "29": ["pha_gran.below", null], "30": ["ba_gran.below", null], "31": ["bha_gran.below", null], "32": ["bha_gran.flat.below", null], "33": ["ma_gran.below", null], "34": ["ya_gran.below", null], "35": ["ra_gran.below", null], "36": ["la_gran.below", null], "37": ["lla_gran.below", null], "38": ["va_gran.below", null], "39": ["sha_gran.below", null], "40": ["ssa_gran.below", null], "41": ["ssa_gran.flat.below", null], "42": ["sa_gran.below", null], "43": ["ha_gran.below", null], "44": ["ha_gran.flat.below", null], "45": ["d_dha_gran.below", null], "46": ["d_va_gran.below", null], "47": ["h_ma_gran.below", null], "48": ["j_ja_gran.below", null], "49": ["j_nya_gran.below", null], "50": ["k_ssa_gran.below", null], "51": ["k_ssa_gran.flat.below", null], "52": ["k_t_va_gran.below", null], "53": ["k_ta_gran.below", null], "54": ["k_ta_gran.flat.below", null], "55": ["m_ma_gran.below", null], "56": ["n_da_gran.below", null], "57": ["n_dha_gran.below", null], "58": ["n_ma_gran.below", null], "59": ["n_na_gran.below", null], "60": ["n_na_gran.flat.below", null], "61": ["n_t_va_gran.below", null], "62": ["n_ta_gran.below", null], "63": ["n_ta_gran.flat.below", null], "64": ["n_tha_gran.below", null], "65": ["n_va_gran.below", null], "66": ["t_ra_gran.below", null], "67": ["t_tha_gran.below", null], "68": ["t_va_gran.below", null], "69": ["ny_ca_gran.below", null], "70": ["ny_cha_gran.below", null], "71": ["ny_ja_gran.below", null], "72": ["sh_ca_gran.below", null], "73": ["sh_ra_gran.below", null], "74": ["ss_tta_gran.below", null]}}, "8": {"glyphs": {"0": ["anudatta_deva", "binducomb_gran"], "1": ["ka_gran.below", "nukta_gran"], "2": ["kha_gran.below", "lVocalicMatra_gran"], "3": ["ga_gran.below", "llVocalicMatra_gran"], "4": ["ga_gran.flat.below", "ka_gran.below"], "5": ["gha_gran.below", "kha_gran.below"], "6": ["nga_gran.below", "ga_gran.below"], "7": ["ca_gran.below", "ga_gran.flat.below"], "8": ["cha_gran.below", "gha_gran.below"], "9": ["ja_gran.below", "nga_gran.below"], "10": ["jha_gran.below", "ca_gran.below"], "11": ["nya_gran.below", "cha_gran.below"], "12": ["tta_gran.below", "ja_gran.below"], "13": ["ttha_gran.below", "jha_gran.below"], "14": ["ttha_gran.below.alt", "nya_gran.below"], "15": ["dda_gran.below", "tta_gran.below"], "16": ["ddha_gran.below", "ttha_gran.below"], "17": ["nna_gran.below", "ttha_gran.below.alt"], "18": ["ta_gran.below", "dda_gran.below"], "19": ["ta_gran.flat.below", "ddha_gran.below"], "20": ["tha_gran.below", "nna_gran.below"], "21": ["da_gran.below", "ta_gran.below"], "22": ["dha_gran.below", "ta_gran.flat.below"], "23": ["na_gran.below", "tha_gran.below"], "24": ["na_gran.flat.below", "da_gran.below"], "25": ["pa_gran.below", "dha_gran.below"], "26": ["pha_gran.below", "na_gran.below"], "27": ["ba_gran.below", "na_gran.flat.below"], "28": ["bha_gran.below", "pa_gran.below"], "29": ["bha_gran.flat.below", "pha_gran.below"], "30": ["ma_gran.below", "ba_gran.below"], "31": ["ya_gran.below", "bha_gran.below"], "32": ["ra_gran.below", "bha_gran.flat.below"], "33": ["la_gran.below", "ma_gran.below"], "34": ["lla_gran.below", "ya_gran.below"], "35": ["va_gran.below", "ra_gran.below"], "36": ["sha_gran.below", "la_gran.below"], "37": ["ssa_gran.below", "lla_gran.below"], "38": ["ssa_gran.flat.below", "va_gran.below"], "39": ["sa_gran.below", "sha_gran.below"], "40": ["ha_gran.below", "ssa_gran.below"], "41": ["ha_gran.flat.below", "ssa_gran.flat.below"], "42": ["d_dha_gran.below", "sa_gran.below"], "43": ["d_va_gran.below", "ha_gran.below"], "44": ["h_ma_gran.below", "ha_gran.flat.below"], "45": ["j_ja_gran.below", "d_dha_gran.below"], "46": ["j_nya_gran.below", "d_va_gran.below"], "47": ["k_ssa_gran.below", "h_ma_gran.below"], "48": ["k_ssa_gran.flat.below", "j_ja_gran.below"], "49": ["k_t_va_gran.below", "j_nya_gran.below"], "50": ["k_ta_gran.below", "k_ssa_gran.below"], "51": ["k_ta_gran.flat.below", "k_ssa_gran.flat.below"], "52": ["m_ma_gran.below", "k_t_va_gran.below"], "53": ["n_da_gran.below", "k_ta_gran.below"], "54": ["n_dha_gran.below", "k_ta_gran.flat.below"], "55": ["n_ma_gran.below", "m_ma_gran.below"], "56": ["n_na_gran.below", "n_da_gran.below"], "57": ["n_na_gran.flat.below", "n_dha_gran.below"], "58": ["n_t_va_gran.below", "n_ma_gran.below"], "59": ["n_ta_gran.below", "n_na_gran.below"], "60": ["n_ta_gran.flat.below", "n_na_gran.flat.below"], "61": ["n_tha_gran.below", "n_t_va_gran.below"], "62": ["n_va_gran.below", "n_ta_gran.below"], "63": ["t_ra_gran.below", "n_ta_gran.flat.below"], "64": ["t_tha_gran.below", "n_tha_gran.below"], "65": ["t_va_gran.below", "n_va_gran.below"], "66": ["ny_ca_gran.below", "t_ra_gran.below"], "67": ["ny_cha_gran.below", "t_tha_gran.below"], "68": ["ny_ja_gran.below", "t_va_gran.below"], "69": ["sh_ca_gran.below", "ny_ca_gran.below"], "70": ["sh_ra_gran.below", "ny_cha_gran.below"], "71": ["ss_tta_gran.below", "ny_ja_gran.below"], "72": [null, "sh_ca_gran.below"], "73": [null, "sh_ra_gran.below"], "74": [null, "ss_tta_gran.below"]}}, "9": {"glyphs": {"0": ["ra_vattu_gran.w1b", "anudatta_deva"], "1": ["ra_vattu_gran", "ka_gran.below"], "2": ["ra_vattu_gran.d1", "kha_gran.below"], "3": ["ra_vattu_gran.d1b", "ga_gran.below"], "4": ["ra_vattu_gran.d1w1", "ga_gran.flat.below"], "5": ["ra_vattu_gran.d1w3", "gha_gran.below"], "6": ["ra_vattu_gran.d2", "nga_gran.below"], "7": ["ra_vattu_gran.d2h2", "ca_gran.below"], "8": ["ra_vattu_gran.d2h3", "cha_gran.below"], "9": ["ra_vattu_gran.d2w2", "ja_gran.below"], "10": ["ra_vattu_gran.d3", "jha_gran.below"], "11": ["ra_vattu_gran.d3b", "nya_gran.below"], "12": ["ra_vattu_gran.d3h1", "tta_gran.below"], "13": ["ra_vattu_gran.d3h1w1", "ttha_gran.below"], "14": ["ra_vattu_gran.d3h2", "ttha_gran.below.alt"], "15": ["ra_vattu_gran.d4", "dda_gran.below"], "16": ["ra_vattu_gran.d4h2", "ddha_gran.below"], "17": ["ra_vattu_gran.d4bh2", "nna_gran.below"], "18": ["anudatta_deva.alt", "ta_gran.below"], "19": [null, "ta_gran.flat.below"], "20": [null, "tha_gran.below"], "21": [null, "da_gran.below"], "22": [null, "dha_gran.below"], "23": [null, "na_gran.below"], "24": [null, "na_gran.flat.below"], "25": [null, "pa_gran.below"], "26": [null, "pha_gran.below"], "27": [null, "ba_gran.below"], "28": [null, "bha_gran.below"], "29": [null, "bha_gran.flat.below"], "30": [null, "ma_gran.below"], "31": [null, "ya_gran.below"], "32": [null, "ra_gran.below"], "33": [null, "la_gran.below"], "34": [null, "lla_gran.below"], "35": [null, "va_gran.below"], "36": [null, "sha_gran.below"], "37": [null, "ssa_gran.below"], "38": [null, "ssa_gran.flat.below"], "39": [null, "sa_gran.below"], "40": [null, "ha_gran.below"], "41": [null, "ha_gran.flat.below"], "42": [null, "d_dha_gran.below"], "43": [null, "d_va_gran.below"], "44": [null, "h_ma_gran.below"], "45": [null, "j_ja_gran.below"], "46": [null, "j_nya_gran.below"], "47": [null, "k_ssa_gran.below"], "48": [null, "k_ssa_gran.flat.below"], "49": [null, "k_t_va_gran.below"], "50": [null, "k_ta_gran.below"], "51": [null, "k_ta_gran.flat.below"], "52": [null, "m_ma_gran.below"], "53": [null, "n_da_gran.below"], "54": [null, "n_dha_gran.below"], "55": [null, "n_ma_gran.below"], "56": [null, "n_na_gran.below"], "57": [null, "n_na_gran.flat.below"], "58": [null, "n_t_va_gran.below"], "59": [null, "n_ta_gran.below"], "60": [null, "n_ta_gran.flat.below"], "61": [null, "n_tha_gran.below"], "62": [null, "n_va_gran.below"], "63": [null, "t_ra_gran.below"], "64": [null, "t_tha_gran.below"], "65": [null, "t_va_gran.below"], "66": [null, "ny_ca_gran.below"], "67": [null, "ny_cha_gran.below"], "68": [null, "ny_ja_gran.below"], "69": [null, "sh_ca_gran.below"], "70": [null, "sh_ra_gran.below"], "71": [null, "ss_tta_gran.below"]}}, "10": {"glyphs": {"0": ["anusvaraAbove_gran", "ra_vattu_gran.w1b"], "1": ["candrabindu_gran", "ra_vattu_gran"], "2": ["virama_gran", "ra_vattu_gran.d1"], "3": ["virama_gran.alt", "ra_vattu_gran.d1b"], "4": ["virama_gran.s1", "ra_vattu_gran.d1w1"], "5": ["udatta_deva", "ra_vattu_gran.d1w3"], "6": ["karshana_vedic", "ra_vattu_gran.d2"], "7": ["prenkha_vedic", "ra_vattu_gran.d2h2"], "8": ["nihshvasa_vedic", "ra_vattu_gran.d2h3"], "9": ["tonecandraabove_vedic", "ra_vattu_gran.d2w2"], "10": ["toneringabove_vedic", "ra_vattu_gran.d3"], "11": ["tonedoubleringabove_vedic", "ra_vattu_gran.d3b"], "12": [null, "ra_vattu_gran.d3h1"], "13": [null, "ra_vattu_gran.d3h1w1"], "14": [null, "ra_vattu_gran.d3h2"], "15": [null, "ra_vattu_gran.d4"], "16": [null, "ra_vattu_gran.d4h2"], "17": [null, "ra_vattu_gran.d4bh2"], "18": [null, "anudatta_deva.alt"]}}, "11": {"glyphs": {"0": ["ra_vattu_gran.w1b", "anusvaraAbove_gran"], "1": ["repha_gran", "candrabindu_gran"], "2": ["yaPhalaa_gran", "virama_gran"], "3": ["yaPhalaa_gran.short", "virama_gran.alt"], "4": ["repha_yaPhalaa", "virama_gran.s1"], "5": ["repha_yaPhalaa.alt", "udatta_deva"], "6": ["repha_yaPhalaa.short", "karshana_vedic"], "7": ["ra_vattu_gran", "prenkha_vedic"], "8": ["ra_vattu_gran.d1", "nihshvasa_vedic"], "9": ["ra_vattu_gran.d1b", "tonecandraabove_vedic"], "10": ["ra_vattu_gran.d1w1", "toneringabove_vedic"], "11": ["ra_vattu_gran.d1w3", "tonedoubleringabove_vedic"], "12": ["ra_vattu_gran.d2", null], "13": ["ra_vattu_gran.d2h2", null], "14": ["ra_vattu_gran.d2h3", null], "15": ["ra_vattu_gran.d2w2", null], "16": ["ra_vattu_gran.d3", null], "17": ["ra_vattu_gran.d3b", null], "18": ["ra_vattu_gran.d3h1", null], "19": ["ra_vattu_gran.d3h1w1", null], "20": ["ra_vattu_gran.d3h2", null], "21": ["ra_vattu_gran.d4", null], "22": ["ra_vattu_gran.d4h2", null], "23": ["ra_vattu_gran.d4bh2", null], "24": ["uMatra_gran", null], "25": ["uuMatra_gran", null]}}, "12": {"glyphs": {"0": ["aaMatra_gran", "ra_vattu_gran.w1b"], "1": ["auLengthMark_gran", "repha_gran"], "2": ["rVocalicMatra_gran", "yaPhalaa_gran"], "3": ["rVocalicMatra_gran.d1", "yaPhalaa_gran.short"], "4": ["rVocalicMatra_gran.d1b", "repha_yaPhalaa"], "5": ["rVocalicMatra_gran.d2", "repha_yaPhalaa.alt"], "6": ["rVocalicMatra_gran.d2b", "repha_yaPhalaa.short"], "7": ["rVocalicMatra_gran.d3", "ra_vattu_gran"], "8": ["rVocalicMatra_gran.d4", "ra_vattu_gran.d1"], "9": ["rVocalicMatra_gran.d4h3", "ra_vattu_gran.d1b"], "10": ["rVocalicMatra_gran.d3h3", "ra_vattu_gran.d1w1"], "11": ["rVocalicMatra_gran.d3h2", "ra_vattu_gran.d1w3"], "12": ["rVocalicMatra_gran.d2h3", "ra_vattu_gran.d2"], "13": ["rVocalicMatra_gran.d2bh3", "ra_vattu_gran.d2h2"], "14": ["rVocalicMatra_gran.d1h3", "ra_vattu_gran.d2h3"], "15": ["rVocalicMatra_gran.d5h3", "ra_vattu_gran.d2w2"], "16": ["ra_vattu_gran.w1b", "ra_vattu_gran.d3"], "17": ["rrVocalicMatra_gran", "ra_vattu_gran.d3b"], "18": ["rrVocalicMatra_gran.d1", "ra_vattu_gran.d3h1"], "19": ["rrVocalicMatra_gran.d1b", "ra_vattu_gran.d3h1w1"], "20": ["rrVocalicMatra_gran.d2", "ra_vattu_gran.d3h2"], "21": ["rrVocalicMatra_gran.d3", "ra_vattu_gran.d4"], "22": ["rrVocalicMatra_gran.d4", "ra_vattu_gran.d4h2"], "23": ["lVocalicMatra_gran", "ra_vattu_gran.d4bh2"], "24": ["llVocalicMatra_gran", "uMatra_gran"], "25": ["repha_gran", "uuMatra_gran"], "26": ["yaPhalaa_gran", null], "27": ["yaPhalaa_gran.short", null], "28": ["repha_yaPhalaa", null], "29": ["repha_yaPhalaa.alt", null], "30": ["repha_yaPhalaa.short", null], "31": ["ra_vattu_gran", null], "32": ["ra_vattu_gran.d1", null], "33": ["ra_vattu_gran.d1b", null], "34": ["ra_vattu_gran.d1w1", null], "35": ["ra_vattu_gran.d1w3", null], "36": ["ra_vattu_gran.d2", null], "37": ["ra_vattu_gran.d2h2", null], "38": ["ra_vattu_gran.d2h3", null], "39": ["ra_vattu_gran.d2w2", null], "40": ["ra_vattu_gran.d3", null], "41": ["ra_vattu_gran.d3b", null], "42": ["ra_vattu_gran.d3h1", null], "43": ["ra_vattu_gran.d3h1w1", null], "44": ["ra_vattu_gran.d3h2", null], "45": ["ra_vattu_gran.d4", null], "46": ["ra_vattu_gran.d4h2", null], "47": ["ra_vattu_gran.d4bh2", null]}}, "13": {"glyphs": {"0": ["ra_vattu_gran.w1b", "aaMatra_gran"], "1": ["repha_gran", "auLengthMark_gran"], "2": ["yaPhalaa_gran", "rVocalicMatra_gran"], "3": ["yaPhalaa_gran.short", "rVocalicMatra_gran.d1"], "4": ["repha_yaPhalaa", "rVocalicMatra_gran.d1b"], "5": ["repha_yaPhalaa.alt", "rVocalicMatra_gran.d2"], "6": ["repha_yaPhalaa.short", "rVocalicMatra_gran.d2b"], "7": ["ra_vattu_gran", "rVocalicMatra_gran.d3"], "8": ["ra_vattu_gran.d1", "rVocalicMatra_gran.d4"], "9": ["ra_vattu_gran.d1b", "rVocalicMatra_gran.d4h3"], "10": ["ra_vattu_gran.d1w1", "rVocalicMatra_gran.d3h3"], "11": ["ra_vattu_gran.d1w3", "rVocalicMatra_gran.d3h2"], "12": ["ra_vattu_gran.d2", "rVocalicMatra_gran.d2h3"], "13": ["ra_vattu_gran.d2h2", "rVocalicMatra_gran.d2bh3"], "14": ["ra_vattu_gran.d2h3", "rVocalicMatra_gran.d1h3"], "15": ["ra_vattu_gran.d2w2", "rVocalicMatra_gran.d5h3"], "16": ["ra_vattu_gran.d3", "ra_vattu_gran.w1b"], "17": ["ra_vattu_gran.d3b", "rrVocalicMatra_gran"], "18": ["ra_vattu_gran.d3h1", "rrVocalicMatra_gran.d1"], "19": ["ra_vattu_gran.d3h1w1", "rrVocalicMatra_gran.d1b"], "20": ["ra_vattu_gran.d3h2", "rrVocalicMatra_gran.d2"], "21": ["ra_vattu_gran.d4", "rrVocalicMatra_gran.d3"], "22": ["ra_vattu_gran.d4h2", "rrVocalicMatra_gran.d4"], "23": ["ra_vattu_gran.d4bh2", "lVocalicMatra_gran"], "24": [null, "llVocalicMatra_gran"], "25": [null, "repha_gran"], "26": [null, "yaPhalaa_gran"], "27": [null, "yaPhalaa_gran.short"], "28": [null, "repha_yaPhalaa"], "29": [null, "repha_yaPhalaa.alt"], "30": [null, "repha_yaPhalaa.short"], "31": [null, "ra_vattu_gran"], "32": [null, "ra_vattu_gran.d1"], "33": [null, "ra_vattu_gran.d1b"], "34": [null, "ra_vattu_gran.d1w1"], "35": [null, "ra_vattu_gran.d1w3"], "36": [null, "ra_vattu_gran.d2"], "37": [null, "ra_vattu_gran.d2h2"], "38": [null, "ra_vattu_gran.d2h3"], "39": [null, "ra_vattu_gran.d2w2"], "40": [null, "ra_vattu_gran.d3"], "41": [null, "ra_vattu_gran.d3b"], "42": [null, "ra_vattu_gran.d3h1"], "43": [null, "ra_vattu_gran.d3h1w1"], "44": [null, "ra_vattu_gran.d3h2"], "45": [null, "ra_vattu_gran.d4"], "46": [null, "ra_vattu_gran.d4h2"], "47": [null, "ra_vattu_gran.d4bh2"]}}, "14": {"glyphs": {"0": ["anusvara_gran", "ra_vattu_gran.w1b"], "1": ["aaMatra_gran", "repha_gran"], "2": ["auLengthMark_gran", "yaPhalaa_gran"], "3": ["ra_vattu_gran.w1b", "yaPhalaa_gran.short"], "4": ["lVocalicMatra_gran", "repha_yaPhalaa"], "5": ["llVocalicMatra_gran", "repha_yaPhalaa.alt"], "6": ["repha_gran", "repha_yaPhalaa.short"], "7": ["yaPhalaa_gran", "ra_vattu_gran"], "8": ["yaPhalaa_gran.short", "ra_vattu_gran.d1"], "9": ["repha_yaPhalaa", "ra_vattu_gran.d1b"], "10": ["repha_yaPhalaa.alt", "ra_vattu_gran.d1w1"], "11": ["repha_yaPhalaa.short", "ra_vattu_gran.d1w3"], "12": ["ra_vattu_gran", "ra_vattu_gran.d2"], "13": ["ra_vattu_gran.d1", "ra_vattu_gran.d2h2"], "14": ["ra_vattu_gran.d1b", "ra_vattu_gran.d2h3"], "15": ["ra_vattu_gran.d1w1", "ra_vattu_gran.d2w2"], "16": ["ra_vattu_gran.d1w3", "ra_vattu_gran.d3"], "17": ["ra_vattu_gran.d2", "ra_vattu_gran.d3b"], "18": ["ra_vattu_gran.d2h2", "ra_vattu_gran.d3h1"], "19": ["ra_vattu_gran.d2h3", "ra_vattu_gran.d3h1w1"], "20": ["ra_vattu_gran.d2w2", "ra_vattu_gran.d3h2"], "21": ["ra_vattu_gran.d3", "ra_vattu_gran.d4"], "22": ["ra_vattu_gran.d3b", "ra_vattu_gran.d4h2"], "23": ["ra_vattu_gran.d3h1", "ra_vattu_gran.d4bh2"], "24": ["ra_vattu_gran.d3h1w1", null], "25": ["ra_vattu_gran.d3h2", null], "26": ["ra_vattu_gran.d4", null], "27": ["ra_vattu_gran.d4h2", null], "28": ["ra_vattu_gran.d4bh2", null], "29": ["uMatra_gran", null], "30": ["uuMatra_gran", null]}}, "15": {"glyphs": {"0": ["ra_vattu_gran.w1b", "anusvara_gran"], "1": ["lVocalicMatra_gran", "aaMatra_gran"], "2": ["llVocalicMatra_gran", "auLengthMark_gran"], "3": ["ra_vattu_gran", "ra_vattu_gran.w1b"], "4": ["ra_vattu_gran.d1", "lVocalicMatra_gran"], "5": ["ra_vattu_gran.d1b", "llVocalicMatra_gran"], "6": ["ra_vattu_gran.d1w1", "repha_gran"], "7": ["ra_vattu_gran.d1w3", "yaPhalaa_gran"], "8": ["ra_vattu_gran.d2", "yaPhalaa_gran.short"], "9": ["ra_vattu_gran.d2h2", "repha_yaPhalaa"], "10": ["ra_vattu_gran.d2h3", "repha_yaPhalaa.alt"], "11": ["ra_vattu_gran.d2w2", "repha_yaPhalaa.short"], "12": ["ra_vattu_gran.d3", "ra_vattu_gran"], "13": ["ra_vattu_gran.d3b", "ra_vattu_gran.d1"], "14": ["ra_vattu_gran.d3h1", "ra_vattu_gran.d1b"], "15": ["ra_vattu_gran.d3h1w1", "ra_vattu_gran.d1w1"], "16": ["ra_vattu_gran.d3h2", "ra_vattu_gran.d1w3"], "17": ["ra_vattu_gran.d4", "ra_vattu_gran.d2"], "18": ["ra_vattu_gran.d4h2", "ra_vattu_gran.d2h2"], "19": ["ra_vattu_gran.d4bh2", "ra_vattu_gran.d2h3"], "20": ["anudatta_deva", "ra_vattu_gran.d2w2"], "21": ["anudatta_deva.alt", "ra_vattu_gran.d3"], "22": ["ka_gran.below", "ra_vattu_gran.d3b"], "23": ["kha_gran.below", "ra_vattu_gran.d3h1"], "24": ["ga_gran.below", "ra_vattu_gran.d3h1w1"], "25": ["ga_gran.flat.below", "ra_vattu_gran.d3h2"], "26": ["gha_gran.below", "ra_vattu_gran.d4"], "27": ["nga_gran.below", "ra_vattu_gran.d4h2"], "28": ["ca_gran.below", "ra_vattu_gran.d4bh2"], "29": ["cha_gran.below", "uMatra_gran"], "30": ["ja_gran.below", "uuMatra_gran"], "31": ["jha_gran.below", null], "32": ["nya_gran.below", null], "33": ["tta_gran.below", null], "34": ["ttha_gran.below", null], "35": ["ttha_gran.below.alt", null], "36": ["dda_gran.below", null], "37": ["ddha_gran.below", null], "38": ["nna_gran.below", null], "39": ["ta_gran.below", null], "40": ["ta_gran.flat.below", null], "41": ["tha_gran.below", null], "42": ["da_gran.below", null], "43": ["dha_gran.below", null], "44": ["na_gran.below", null], "45": ["na_gran.flat.below", null], "46": ["pa_gran.below", null], "47": ["pha_gran.below", null], "48": ["ba_gran.below", null], "49": ["bha_gran.below", null], "50": ["bha_gran.flat.below", null], "51": ["ma_gran.below", null], "52": ["ya_gran.below", null], "53": ["ra_gran.below", null], "54": ["la_gran.below", null], "55": ["lla_gran.below", null], "56": ["va_gran.below", null], "57": ["sha_gran.below", null], "58": ["ssa_gran.below", null], "59": ["ssa_gran.flat.below", null], "60": ["sa_gran.below", null], "61": ["ha_gran.below", null], "62": ["ha_gran.flat.below", null], "63": ["d_dha_gran.below", null], "64": ["d_va_gran.below", null], "65": ["h_ma_gran.below", null], "66": ["j_ja_gran.below", null], "67": ["j_nya_gran.below", null], "68": ["k_ssa_gran.below", null], "69": ["k_ssa_gran.flat.below", null], "70": ["k_t_va_gran.below", null], "71": ["k_ta_gran.below", null], "72": ["k_ta_gran.flat.below", null], "73": ["m_ma_gran.below", null], "74": ["n_da_gran.below", null], "75": ["n_dha_gran.below", null], "76": ["n_ma_gran.below", null], "77": ["n_na_gran.below", null], "78": ["n_na_gran.flat.below", null], "79": ["n_t_va_gran.below", null], "80": ["n_ta_gran.below", null], "81": ["n_ta_gran.flat.below", null], "82": ["n_tha_gran.below", null], "83": ["n_va_gran.below", null], "84": ["t_ra_gran.below", null], "85": ["t_tha_gran.below", null], "86": ["t_va_gran.below", null], "87": ["ny_ca_gran.below", null], "88": ["ny_cha_gran.below", null], "89": ["ny_ja_gran.below", null], "90": ["sh_ca_gran.below", null], "91": ["sh_ra_gran.below", null], "92": ["ss_tta_gran.below", null]}}, "16": {"glyphs": {"0": ["lVocalicMatra_gran", "ra_vattu_gran.w1b"], "1": ["llVocalicMatra_gran", "lVocalicMatra_gran"], "2": ["zerocomb_gran", "llVocalicMatra_gran"], "3": ["onecomb_gran", "ra_vattu_gran"], "4": ["twocomb_gran", "ra_vattu_gran.d1"], "5": ["threecomb_gran", "ra_vattu_gran.d1b"], "6": ["fourcomb_gran", "ra_vattu_gran.d1w1"], "7": ["fivecomb_gran", "ra_vattu_gran.d1w3"], "8": ["sixcomb_gran", "ra_vattu_gran.d2"], "9": ["acomb_gran", "ra_vattu_gran.d2h2"], "10": ["kacomb_gran", "ra_vattu_gran.d2h3"], "11": ["nacomb_gran", "ra_vattu_gran.d2w2"], "12": ["vicomb_gran", "ra_vattu_gran.d3"], "13": ["pacomb_gran", "ra_vattu_gran.d3b"], "14": ["asteriskabovecomb", "ra_vattu_gran.d3h1"], "15": [null, "ra_vattu_gran.d3h1w1"], "16": [null, "ra_vattu_gran.d3h2"], "17": [null, "ra_vattu_gran.d4"], "18": [null, "ra_vattu_gran.d4h2"], "19": [null, "ra_vattu_gran.d4bh2"], "20": [null, "anudatta_deva"], "21": [null, "anudatta_deva.alt"], "22": [null, "ka_gran.below"], "23": [null, "kha_gran.below"], "24": [null, "ga_gran.below"], "25": [null, "ga_gran.flat.below"], "26": [null, "gha_gran.below"], "27": [null, "nga_gran.below"], "28": [null, "ca_gran.below"], "29": [null, "cha_gran.below"], "30": [null, "ja_gran.below"], "31": [null, "jha_gran.below"], "32": [null, "nya_gran.below"], "33": [null, "tta_gran.below"], "34": [null, "ttha_gran.below"], "35": [null, "ttha_gran.below.alt"], "36": [null, "dda_gran.below"], "37": [null, "ddha_gran.below"], "38": [null, "nna_gran.below"], "39": [null, "ta_gran.below"], "40": [null, "ta_gran.flat.below"], "41": [null, "tha_gran.below"], "42": [null, "da_gran.below"], "43": [null, "dha_gran.below"], "44": [null, "na_gran.below"], "45": [null, "na_gran.flat.below"], "46": [null, "pa_gran.below"], "47": [null, "pha_gran.below"], "48": [null, "ba_gran.below"], "49": [null, "bha_gran.below"], "50": [null, "bha_gran.flat.below"], "51": [null, "ma_gran.below"], "52": [null, "ya_gran.below"], "53": [null, "ra_gran.below"], "54": [null, "la_gran.below"], "55": [null, "lla_gran.below"], "56": [null, "va_gran.below"], "57": [null, "sha_gran.below"], "58": [null, "ssa_gran.below"], "59": [null, "ssa_gran.flat.below"], "60": [null, "sa_gran.below"], "61": [null, "ha_gran.below"], "62": [null, "ha_gran.flat.below"], "63": [null, "d_dha_gran.below"], "64": [null, "d_va_gran.below"], "65": [null, "h_ma_gran.below"], "66": [null, "j_ja_gran.below"], "67": [null, "j_nya_gran.below"], "68": [null, "k_ssa_gran.below"], "69": [null, "k_ssa_gran.flat.below"], "70": [null, "k_t_va_gran.below"], "71": [null, "k_ta_gran.below"], "72": [null, "k_ta_gran.flat.below"], "73": [null, "m_ma_gran.below"], "74": [null, "n_da_gran.below"], "75": [null, "n_dha_gran.below"], "76": [null, "n_ma_gran.below"], "77": [null, "n_na_gran.below"], "78": [null, "n_na_gran.flat.below"], "79": [null, "n_t_va_gran.below"], "80": [null, "n_ta_gran.below"], "81": [null, "n_ta_gran.flat.below"], "82": [null, "n_tha_gran.below"], "83": [null, "n_va_gran.below"], "84": [null, "t_ra_gran.below"], "85": [null, "t_tha_gran.below"], "86": [null, "t_va_gran.below"], "87": [null, "ny_ca_gran.below"], "88": [null, "ny_cha_gran.below"], "89": [null, "ny_ja_gran.below"], "90": [null, "sh_ca_gran.below"], "91": [null, "sh_ra_gran.below"], "92": [null, "ss_tta_gran.below"]}}, "17": {"glyphs": {"0": ["zerocomb_gran", "lVocalicMatra_gran"], "1": ["onecomb_gran", "llVocalicMatra_gran"], "2": ["twocomb_gran", "zerocomb_gran"], "3": ["threecomb_gran", "onecomb_gran"], "4": ["fourcomb_gran", "twocomb_gran"], "5": ["fivecomb_gran", "threecomb_gran"], "6": ["sixcomb_gran", "fourcomb_gran"], "7": ["acomb_gran", "fivecomb_gran"], "8": ["kacomb_gran", "sixcomb_gran"], "9": ["nacomb_gran", "acomb_gran"], "10": ["vicomb_gran", "kacomb_gran"], "11": ["pacomb_gran", "nacomb_gran"], "12": ["asteriskabovecomb", "vicomb_gran"], "13": [null, "pacomb_gran"], "14": [null, "asteriskabovecomb"]}}, "18": {"glyphs": {"0": [null, "zerocomb_gran"], "1": [null, "onecomb_gran"], "2": [null, "twocomb_gran"], "3": [null, "threecomb_gran"], "4": [null, "fourcomb_gran"], "5": [null, "fivecomb_gran"], "6": [null, "sixcomb_gran"], "7": [null, "acomb_gran"], "8": [null, "kacomb_gran"], "9": [null, "nacomb_gran"], "10": [null, "vicomb_gran"], "11": [null, "pacomb_gran"], "12": [null, "asteriskabovecomb"]}}, "19": {"glyphs": {"0": [null, "asteriskabovecomb"]}}}}}}};</script>
 
     </div>
 </body>
@@ -304,38 +316,157 @@
 		fontToggle.addEventListener("click", switchFonts);
 	}
 
-	function render(node, toplevel) {
-		var wrapper = $("<div> </div>");
-		if (!node) { return wrapper }
-		if (Array.isArray(node)) {
-			var before = $("<span/>");
-			before.addClass("attr-before");
-			before.html(" " + node[0] + " ");
-			var after = $("<span/>");
-			after.addClass("attr-after");
-			after.append(node[1]);
-			wrapper.append(before);
-			wrapper.append(after);
-			return wrapper
-		}
-		for (const [key, value] of Object.entries(node)) {
-			var display = $("<div/>");
-			display.addClass("node")
-			if (!toplevel && ! key.match(/^\d+$/)) {
-				display.hide()
-			}
-			display.append(key);
-			display.append(render(value, false).children());
-			wrapper.append(display)
-		}
-		return wrapper
+// apply optional ot feats
 
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
 	}
-	$(function() {
-		$("#difftable").append(render(fontdiff, true).children())
-		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
-	});
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
     
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
 
 function wordBreaks() {
   words = document.getElementsByClassName("cell-word")
