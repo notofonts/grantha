@@ -1,5 +1,5 @@
 {
-.appVersion = "3202";
+.appVersion = "3227";
 DisplayStrings = (
 "/space/kha_gran.below.alt/space/space/space/space/space/kha_gran.below/kha_gran/kha_gran.alt"
 );
@@ -1545,12 +1545,12 @@ name = licenseURL;
 value = "https://scripts.sil.org/OFL";
 },
 {
-name = vendorID;
-value = GOOG;
-},
-{
 name = trademark;
 value = "Noto is a trademark of Google Inc.";
+},
+{
+name = vendorID;
+value = GOOG;
 },
 {
 name = versionString;
@@ -2260,7 +2260,7 @@ name = ss10;
 notes = "Name: Alternate ttha";
 },
 {
-code = "# Automatic Code Start\012    lookup ChainedContextualGPOS35;\012";
+code = "# Automatic Code Start\012    lookup ChainedContextualGPOS35;\012# HB started zeroing the widths of spacing combining marks, which is annoying.\012lookup AddSpaceBackToSpacingCombining {\012	pos [rVocalicMatra_gran rVocalicMatra_gran.d1 rVocalicMatra_gran.d1b rVocalicMatra_gran.d2 rVocalicMatra_gran.d2b rVocalicMatra_gran.d3 rVocalicMatra_gran.d4 rrVocalicMatra_gran rrVocalicMatra_gran.d1 rrVocalicMatra_gran.d1b rrVocalicMatra_gran.d2 rrVocalicMatra_gran.d3 rrVocalicMatra_gran.d4] 347;\012	pos rVocalicMatra_gran.d3h2 497;\012	pos [ rVocalicMatra_gran.d4h3 rVocalicMatra_gran.d3h3 rVocalicMatra_gran.d2h3 rVocalicMatra_gran.d2bh3 rVocalicMatra_gran.d1h3 rVocalicMatra_gran.d5h3 ] 647;\012} AddSpaceBackToSpacingCombining;";
 name = dist;
 },
 {
@@ -11673,7 +11673,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = rVocalicMatra_gran;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -11749,16 +11749,16 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 unicode = 11343;
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d1;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -11834,15 +11834,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d1b;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -11918,15 +11918,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d2;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12002,15 +12002,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d2b;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12086,15 +12086,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12170,15 +12170,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d4;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12254,15 +12254,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d4h3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12338,15 +12338,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 647;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d3h3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12422,15 +12422,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 647;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d3h2;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12506,15 +12506,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 497;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d2h3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12590,15 +12590,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 647;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d2bh3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12674,15 +12674,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 647;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d1h3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12758,15 +12758,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 647;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rVocalicMatra_gran.d5h3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -12842,11 +12842,11 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 647;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = ra_vattu_gran.w1b;
@@ -12939,7 +12939,7 @@ subCategory = Nonspacing;
 },
 {
 glyphname = rrVocalicMatra_gran;
-lastChange = "2021-12-13 13:27:16 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -13040,16 +13040,16 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 unicode = 11344;
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rrVocalicMatra_gran.d1;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -13150,15 +13150,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rrVocalicMatra_gran.d1b;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -13259,15 +13259,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rrVocalicMatra_gran.d2;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -13368,15 +13368,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rrVocalicMatra_gran.d3;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -13477,15 +13477,15 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = rrVocalicMatra_gran.d4;
-lastChange = "2020-05-24 21:49:22 +0000";
+lastChange = "2024-01-08 10:22:57 +0000";
 layers = (
 {
 anchors = (
@@ -13586,11 +13586,11 @@ nodes = (
 );
 }
 );
-width = 0;
+width = 347;
 }
 );
 category = Mark;
-subCategory = Nonspacing;
+subCategory = "Spacing Combining";
 },
 {
 glyphname = lVocalicMatra_gran;
@@ -60582,6 +60582,82 @@ category = Mark;
 subCategory = Nonspacing;
 },
 {
+export = 0;
+glyphname = gha.base;
+lastChange = "2020-05-24 21:49:22 +0000";
+layers = (
+{
+layerId = "229B7033-F00A-4676-AEB9-BF59C6456AE0";
+paths = (
+{
+closed = 1;
+nodes = (
+"376 -12 OFFCURVE",
+"442 54 OFFCURVE",
+"442 161 CURVE SMOOTH",
+"442 265 OFFCURVE",
+"377 328 OFFCURVE",
+"281 328 CURVE SMOOTH",
+"216 328 OFFCURVE",
+"153 295 OFFCURVE",
+"113 248 CURVE",
+"128 184 LINE",
+"167 227 OFFCURVE",
+"214 258 OFFCURVE",
+"267 258 CURVE SMOOTH",
+"322 258 OFFCURVE",
+"360 221 OFFCURVE",
+"360 155 CURVE SMOOTH",
+"360 91 OFFCURVE",
+"325 56 OFFCURVE",
+"273 56 CURVE SMOOTH",
+"207 56 OFFCURVE",
+"156 103 OFFCURVE",
+"156 237 CURVE SMOOTH",
+"156 383 OFFCURVE",
+"240 504 OFFCURVE",
+"380 504 CURVE SMOOTH",
+"504 504 OFFCURVE",
+"585 411 OFFCURVE",
+"585 269 CURVE SMOOTH",
+"585 178 OFFCURVE",
+"562 109 OFFCURVE",
+"531 63 CURVE",
+"535 0 LINE",
+"977 0 LINE",
+"977 566 LINE",
+"891 566 LINE",
+"891 72 LINE",
+"623 72 LINE",
+"650 131 OFFCURVE",
+"671 194 OFFCURVE",
+"671 280 CURVE SMOOTH",
+"671 437 OFFCURVE",
+"587 576 OFFCURVE",
+"384 576 CURVE SMOOTH",
+"219 576 OFFCURVE",
+"70 457 OFFCURVE",
+"70 237 CURVE SMOOTH",
+"70 63 OFFCURVE",
+"162 -12 OFFCURVE",
+"269 -12 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"1283 0 LINE",
+"1283 72 LINE",
+"919 72 LINE",
+"919 0 LINE"
+);
+}
+);
+width = 1363;
+}
+);
+},
+{
 glyphname = kha_gran.below.alt;
 lastChange = "2023-06-28 12:56:58 +0000";
 layers = (
@@ -61843,82 +61919,6 @@ nodes = (
 }
 );
 width = 1068;
-}
-);
-},
-{
-export = 0;
-glyphname = gha.base;
-lastChange = "2020-05-24 21:49:22 +0000";
-layers = (
-{
-layerId = "229B7033-F00A-4676-AEB9-BF59C6456AE0";
-paths = (
-{
-closed = 1;
-nodes = (
-"376 -12 OFFCURVE",
-"442 54 OFFCURVE",
-"442 161 CURVE SMOOTH",
-"442 265 OFFCURVE",
-"377 328 OFFCURVE",
-"281 328 CURVE SMOOTH",
-"216 328 OFFCURVE",
-"153 295 OFFCURVE",
-"113 248 CURVE",
-"128 184 LINE",
-"167 227 OFFCURVE",
-"214 258 OFFCURVE",
-"267 258 CURVE SMOOTH",
-"322 258 OFFCURVE",
-"360 221 OFFCURVE",
-"360 155 CURVE SMOOTH",
-"360 91 OFFCURVE",
-"325 56 OFFCURVE",
-"273 56 CURVE SMOOTH",
-"207 56 OFFCURVE",
-"156 103 OFFCURVE",
-"156 237 CURVE SMOOTH",
-"156 383 OFFCURVE",
-"240 504 OFFCURVE",
-"380 504 CURVE SMOOTH",
-"504 504 OFFCURVE",
-"585 411 OFFCURVE",
-"585 269 CURVE SMOOTH",
-"585 178 OFFCURVE",
-"562 109 OFFCURVE",
-"531 63 CURVE",
-"535 0 LINE",
-"977 0 LINE",
-"977 566 LINE",
-"891 566 LINE",
-"891 72 LINE",
-"623 72 LINE",
-"650 131 OFFCURVE",
-"671 194 OFFCURVE",
-"671 280 CURVE SMOOTH",
-"671 437 OFFCURVE",
-"587 576 OFFCURVE",
-"384 576 CURVE SMOOTH",
-"219 576 OFFCURVE",
-"70 457 OFFCURVE",
-"70 237 CURVE SMOOTH",
-"70 63 OFFCURVE",
-"162 -12 OFFCURVE",
-"269 -12 CURVE SMOOTH"
-);
-},
-{
-closed = 1;
-nodes = (
-"1283 0 LINE",
-"1283 72 LINE",
-"919 72 LINE",
-"919 0 LINE"
-);
-}
-);
-width = 1363;
 }
 );
 },
