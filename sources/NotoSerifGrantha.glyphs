@@ -1,7 +1,7 @@
 {
-.appVersion = "3227";
+.appVersion = "3243";
 DisplayStrings = (
-"/rVocalicMatra_gran.d1b"
+"/yaPhalaa_gran"
 );
 classes = (
 {
@@ -2489,7 +2489,7 @@ name = ss10;
 notes = "Name: Alternate ttha";
 },
 {
-code = "# Automatic Code Start\012# [('gran', 'dflt')]\012    lookup ChainedContextualGPOS35;\012\012# HB started zeroing the widths of spacing combining marks, which is annoying.\012lookup AddSpaceBackToSpacingCombining {\012	pos [rVocalicMatra_gran rVocalicMatra_gran.d1 rVocalicMatra_gran.d1b rVocalicMatra_gran.d2 rVocalicMatra_gran.d2b rVocalicMatra_gran.d3 rVocalicMatra_gran.d4 rrVocalicMatra_gran rrVocalicMatra_gran.d1 rrVocalicMatra_gran.d1b rrVocalicMatra_gran.d2 rrVocalicMatra_gran.d3 rrVocalicMatra_gran.d4] 347;\012	pos rVocalicMatra_gran.d3h2 497;\012	pos [ rVocalicMatra_gran.d4h3 rVocalicMatra_gran.d3h3 rVocalicMatra_gran.d2h3 rVocalicMatra_gran.d2bh3 rVocalicMatra_gran.d1h3 rVocalicMatra_gran.d5h3 ] 647;\012} AddSpaceBackToSpacingCombining;";
+code = "# Automatic Code Start\012# [('gran', 'dflt')]\012    lookup ChainedContextualGPOS35;\012\012# HB started zeroing the widths of spacing combining marks, which is annoying.\012lookup AddSpaceBackToSpacingCombining {\012	pos [rVocalicMatra_gran rVocalicMatra_gran.d1 rVocalicMatra_gran.d1b rVocalicMatra_gran.d2 rVocalicMatra_gran.d2b rVocalicMatra_gran.d3 rVocalicMatra_gran.d4 rrVocalicMatra_gran rrVocalicMatra_gran.d1 rrVocalicMatra_gran.d1b rrVocalicMatra_gran.d2 rrVocalicMatra_gran.d3 rrVocalicMatra_gran.d4] 347;\012	pos rVocalicMatra_gran.d3h2 497;\012	pos [ rVocalicMatra_gran.d4h3 rVocalicMatra_gran.d3h3 rVocalicMatra_gran.d2h3 rVocalicMatra_gran.d2bh3 rVocalicMatra_gran.d1h3 rVocalicMatra_gran.d5h3 ] 647;\012} AddSpaceBackToSpacingCombining;\012\012pos yaPhalaa_gran' yaPhalaa_gran 609;";
 name = dist;
 },
 {
@@ -14607,7 +14607,7 @@ subCategory = "Spacing Combining";
 },
 {
 glyphname = yaPhalaa_gran;
-lastChange = "2020-05-24 21:48:52 +0000";
+lastChange = "2024-05-20 12:04:40 +0000";
 layers = (
 {
 anchors = (
@@ -14662,6 +14662,10 @@ position = "{507, 566}";
 {
 name = vattu;
 position = "{608, 0}";
+},
+{
+name = yaphalaa;
+position = "{609, 0}";
 }
 );
 guideLines = (
