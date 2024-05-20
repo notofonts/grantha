@@ -1552,10 +1552,6 @@ value = "Noto is a trademark of Google Inc.";
 {
 name = vendorID;
 value = GOOG;
-},
-{
-name = versionString;
-value = "Version 2.003";
 }
 );
 date = "2021-12-16 18:47:01 +0000";
@@ -62426,5 +62422,5 @@ userData = {
 LWPluginVersion = "1429";
 };
 versionMajor = 2;
-versionMinor = 3;
+versionMinor = 5;
 }
